@@ -18,7 +18,7 @@ const TestSlider = () => {
     <Slider {...settings}>
       <div className='flex justify-center items-center px-[50px] pb-[100px]'>
         <h1 className={styles.title}>
-          <p>Ассоциация "Налоги России"</p>
+          <p>Ассоциация &quot;Налоги России&quot;</p>
           <p className='text-xl text-red-500'>Защита бизнеса с 1992 года</p>
         </h1>
         <div className={styles.pageContent}>
