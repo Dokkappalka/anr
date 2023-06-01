@@ -20,15 +20,13 @@ const Navigation = ({ navLinks }: Props) => {
       {navLinks.map((link) => {
         const isActive = pathname === link.href
         return (
-          <>
-            <Link
-              key={link.label}
-              href={link.href}
-              className={isActive ? styles.linkActive : styles.link}
-            >
-              {link.label}
-            </Link>
-          </>
+          <Link
+            key={link.label}
+            href={link.href}
+            className={isActive ? styles.linkActive : styles.link}
+          >
+            {link.label}
+          </Link>
         )
       })}
     </>
