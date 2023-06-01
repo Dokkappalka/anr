@@ -177,11 +177,11 @@ const ClientsPage = () => {
       <div className={styles.listContainer}>
         {allClients.map((client) => {
           return (
-            <div className={styles.clientContainer}>
+            <div className={styles.clientContainer} key={client.title}>
               <span>{client.title}:</span>
               <ul>
-                {client.clients.map((item) => {
-                  return <li>{item}</li>
+                {client.clients.map((item, i) => {
+                  return <li key={i}>{item}</li>
                 })}
               </ul>
             </div>

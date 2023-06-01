@@ -105,8 +105,8 @@ const LicensesPage = () => {
     <div className={styles.pageContainer}>
       <h2>Лицензии и свидетельства</h2>
       <div className={styles.licensesContainer}>
-        {allLicenses.map((license) => {
-          return <License {...license} />
+        {allLicenses.map((license, i) => {
+          return <License {...license} key={i} />
         })}
       </div>
     </div>

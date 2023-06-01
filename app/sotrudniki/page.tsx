@@ -81,6 +81,7 @@ const Sotrudniki = () => {
               phone={person.phone}
               email={person.email}
               image={person.image}
+              key={person.name}
             />
           )
         })}
