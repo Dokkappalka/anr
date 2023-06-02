@@ -1,5 +1,6 @@
 import Person from '@/components/Person/Person'
 import styles from './Sotrudniki.module.scss'
+import { getAllPersons } from '@/services/getAllPersons'
 
 interface IPerson {
   name: string
@@ -13,9 +14,7 @@ interface IPerson {
 }
 
 const Sotrudniki = async () => {
-  const allPersons: IPerson[] = await fetch(
-    `${process.env.API}/api/persons`
-  ).then((res) => res.json())
+  const allPersons: IPerson[] = await getAllPersons()
   return (
     <div className={styles.pageContainer}>
       <h2>Сотрудники</h2>
