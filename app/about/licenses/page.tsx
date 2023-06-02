@@ -1,5 +1,6 @@
 import styles from './LicensesPage.module.scss'
 import License from '@/components/License/License'
+import { getAllLicenses } from '@/services/getAllLicenses'
 
 interface ILicenses {
   img: any
@@ -7,9 +8,7 @@ interface ILicenses {
 }
 
 const LicensesPage = async () => {
-  const allLicenses: ILicenses[] = await fetch(
-    `${process.env.API}/api/licenses`
-  ).then((res) => res.json())
+  const allLicenses: ILicenses[] = await getAllLicenses()
   return (
     <div className={styles.pageContainer}>
       <h2>Лицензии и свидетельства</h2>

@@ -1,3 +1,4 @@
+import { getAllClients } from '@/services/getAllClients'
 import styles from './ClientsPage.module.scss'
 
 interface IAllClicents {
@@ -5,9 +6,7 @@ interface IAllClicents {
   clients: string[]
 }
 const ClientsPage = async () => {
-  const allClients: IAllClicents[] = await fetch(
-    `${process.env.API}/api/clients`
-  ).then((res) => res.json())
+  const allClients: IAllClicents[] = await getAllClients()
   return (
     <div className={styles.pageContainer}>
       <h2>Клиенты</h2>

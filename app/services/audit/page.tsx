@@ -1,6 +1,7 @@
 import ServicePerson from '@/components/ServicePerson/ServicePerson'
 import styles from './auditPage.module.scss'
 import Image from 'next/image'
+import { getCurrentPerson } from '@/services/getCurrentPerson'
 
 interface IPerson {
   name: string
@@ -14,9 +15,7 @@ interface IPerson {
 }
 
 const auditPage = async () => {
-  const nikitenkov: IPerson[] = await fetch(
-    `${process.env.API}/api/persons?email=nikitenkov@anr.ru`
-  ).then((res) => res.json())
+  const nikitenkov: IPerson[] = await getCurrentPerson('nikitenkov@anr.ru')
   return (
     <div className={styles.pageContainer}>
       <h2>Аудит</h2>
