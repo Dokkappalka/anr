@@ -8,15 +8,15 @@ interface ILicenses {
 }
 
 const LicensesPage = async () => {
-  const allLicenses: ILicenses[] = await getAllLicenses()
+  // const allLicenses: ILicenses[] = await getAllLicenses()
   return (
     <div className={styles.pageContainer}>
-      <h2>Лицензии и свидетельства</h2>
+      {/* <h2>Лицензии и свидетельства</h2>
       <div className={styles.licensesContainer}>
         {allLicenses.map((license, i) => {
           return <License {...license} key={i} />
         })}
-      </div>
+      </div> */}
     </div>
   )
 }

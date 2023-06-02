@@ -15,16 +15,16 @@ interface IPerson {
 }
 
 const auditPage = async () => {
-  const nikitenkov: IPerson[] = await getCurrentPerson('nikitenkov@anr.ru')
+  // const nikitenkov: IPerson[] = await getCurrentPerson('nikitenkov@anr.ru')
   return (
     <div className={styles.pageContainer}>
       <h2>Аудит</h2>
-      <ServicePerson
+      {/* <ServicePerson
         name={nikitenkov[0].name}
         work={nikitenkov[0].work}
         phone={nikitenkov[0].phone}
         image={nikitenkov[0].image}
-      />
+      /> */}
       <div>
         <p className={styles.paragraph}>
           Одним из основных направлений деятельности группы компаний Ассоциация

@@ -14,7 +14,7 @@ interface IPerson {
 }
 
 const Sotrudniki = async () => {
-  const allPersons: IPerson[] = await getAllPersons()
+  // const allPersons: IPerson[] = await getAllPersons()
   return (
     <div className={styles.pageContainer}>
       <h2>Сотрудники</h2>
@@ -31,7 +31,7 @@ const Sotrudniki = async () => {
         юридического сопровождения предприятий различных отраслей и форм
         собственности, оценки.
       </p>
-      <div className={styles.personsContainer}>
+      {/* <div className={styles.personsContainer}>
         {allPersons.map((person) => {
           return (
             <Person
@@ -47,7 +47,7 @@ const Sotrudniki = async () => {
             />
           )
         })}
-      </div>
+      </div> */}
     </div>
   )
 }
