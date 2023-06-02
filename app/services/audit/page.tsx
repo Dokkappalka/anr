@@ -15,7 +15,7 @@ interface IPerson {
 
 const auditPage = async () => {
   const nikitenkov: IPerson[] = await fetch(
-    'http://localhost:3000/api/persons?email=nikitenkov@anr.ru'
+    `${process.env.API}/api/persons?email=nikitenkov@anr.ru`
   ).then((res) => res.json())
   return (
     <div className={styles.pageContainer}>

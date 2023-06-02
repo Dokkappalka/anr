@@ -8,7 +8,7 @@ interface ILicenses {
 
 const LicensesPage = async () => {
   const allLicenses: ILicenses[] = await fetch(
-    'http:localhost:3000/api/licenses'
+    `${process.env.API}/api/licenses`
   ).then((res) => res.json())
   return (
     <div className={styles.pageContainer}>

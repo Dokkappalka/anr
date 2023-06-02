@@ -1,7 +1,7 @@
 import Person from '@/components/Person/Person'
 import styles from './Sotrudniki.module.scss'
 
-interface IAllPersons {
+interface IPerson {
   name: string
   work: string
   isCertified: boolean
@@ -13,8 +13,8 @@ interface IAllPersons {
 }
 
 const Sotrudniki = async () => {
-  const allPersons: IAllPersons[] = await fetch(
-    'http:localhost:3000/api/persons'
+  const allPersons: IPerson[] = await fetch(
+    `${process.env.API}/api/persons`
   ).then((res) => res.json())
   return (
     <div className={styles.pageContainer}>

@@ -6,7 +6,7 @@ interface IAllClicents {
 }
 const ClientsPage = async () => {
   const allClients: IAllClicents[] = await fetch(
-    'http:localhost:3000/api/clients'
+    `${process.env.API}/api/clients`
   ).then((res) => res.json())
   return (
     <div className={styles.pageContainer}>
