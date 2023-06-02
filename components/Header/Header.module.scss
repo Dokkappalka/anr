@@ -3,7 +3,10 @@
 }
 
 .headerPage {
-    @apply bg-slate-100 px-[75px] h-[450px] bg-gradient-to-b from-slate-100 to-sky-200 pt-[125px]
+    @apply bg-slate-100 px-[75px] h-[450px] bg-gradient-to-b from-slate-100 to-sky-200 pt-[125px];
+    @media (max-width: 750px) {
+        @apply px-[25px]
+    }
 }
 
 .title {
@@ -24,5 +27,20 @@
 .buttons {
     button:nth-child(1){
         @apply mr-2
+    };
+    @media (max-width: 750px) {
+        @apply hidden
+    }
+}
+
+.navList {
+    @media(max-width: 750px) {
+        @apply hidden
+    }
+}
+
+.menuButton {
+    @media (min-width: 750px) {
+        @apply hidden
     }
 }

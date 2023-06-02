@@ -1,7 +1,8 @@
 import { Navigation } from '../Navigation/Navigation'
 import TestSlider from '../TestSlider/TestSlider'
 import styles from './Header.module.scss'
-
+import menu from '../../assets/menu.svg'
+import Image from 'next/image'
 const navItems = [
   { label: 'Услуги', href: '/qwe' },
   { label: 'Сотрудники', href: '/sotrudniki' },
@@ -19,13 +20,16 @@ const Header = () => {
         <a className='font-semibold text-xl' href='/'>
           ANR.RU
         </a>
-        <p>
+        <p className={styles.navList}>
           <Navigation navLinks={navItems} />
         </p>
         <p className={styles.buttons}>
           <button>EN</button>
           <button>RU</button>
         </p>
+        <button className={styles.menuButton}>
+          <Image alt='Menu button' src={menu} />
+        </button>
       </header>
     </>
   )
