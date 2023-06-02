@@ -10,5 +10,9 @@ export function GET(req: Request) {
       person.email.toLocaleLowerCase().includes(query.toLowerCase())
     )
   }
-  return NextResponse.json(currentPersons)
+
+  return new NextResponse(JSON.stringify(currentPersons), {
+    status: 201,
+    headers: { 'Content-Type': 'application/json' },
+  })
 }
