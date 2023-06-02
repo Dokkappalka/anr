@@ -6,10 +6,10 @@ interface IAllClicents {
   clients: string[]
 }
 const ClientsPage = async () => {
-  // const allClients: IAllClicents[] = await getAllClients()
+  const allClients: IAllClicents[] = await getAllClients()
   return (
     <div className={styles.pageContainer}>
-      {/* <h2>Клиенты</h2>
+      <h2>Клиенты</h2>
       <div className={styles.listContainer}>
         {allClients.map((client) => {
           return (
@@ -23,7 +23,7 @@ const ClientsPage = async () => {
             </div>
           )
         })}
-      </div> */}
+      </div>
     </div>
   )
 }
