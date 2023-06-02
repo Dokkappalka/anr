@@ -13,11 +13,15 @@
 }
 
 .slideContainer {
-    @apply flex justify-center items-center px-[50px] pb-[100px];
+    @apply flex justify-center items-center px-[50px] py-[125px];
     @media(max-width: 750px) {
         @apply px-1
     };
     @media(max-width: 400px) {
         @apply pb-[50px]
     }
+}
+
+.newsLink {
+    @apply text-sky-500 underline
 }

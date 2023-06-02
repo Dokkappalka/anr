@@ -1,22 +1,3 @@
-.list {
-    @apply my-3 list-disc list-inside
-}
-
-.pageContainer {
-    p {
-        @apply my-4
-    }
-}
-
-.links {
-    @apply flex items-start flex-col;
-}
-
-.link {
-    @apply underline mt-2 text-sky-600 hover:text-sky-700 duration-200;
-}
-
-
 .layoutContainer {
     @apply flex items-start flex-row;
     @media(max-width: 750px) {

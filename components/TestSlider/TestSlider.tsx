@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import styles from './Slider.module.scss'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Link from 'next/link'
 const TestSlider = () => {
   const settings = {
     dots: true,
@@ -26,9 +27,33 @@ const TestSlider = () => {
           <p>Почта: Anr@anr.ru</p>
         </div>
       </div>
-      <div>Здесь будут новости</div>
-      <div>
-        <p>И на заднем фоне картинки, если придумаю, какие...</p>
+      <div className={styles.slideContainer}>
+        <h1 className={styles.title}>
+          Ассоциация «Налоги России» входит в ТОП 10 Аудиторско-консалтинговых
+          групп Урала и Западной Сибири по результатам деятельности в 2021 году
+        </h1>
+        <Link href='/about' className={styles.newsLink}>
+          Читать новость...
+        </Link>
+      </div>
+      <div className={styles.slideContainer}>
+        <h1 className={styles.title}>
+          Ассоциация «Налоги России» входит в ТОП 45 Крупнейших аудиторских
+          групп по выручке от оценочной деятельности в 2021 году
+        </h1>
+        <Link href='/about' className={styles.newsLink}>
+          Читать новость...
+        </Link>
+      </div>
+      <div className={styles.slideContainer}>
+        <h1 className={styles.title}>
+          Ассоциация «Налоги России» входит в ТОП 15 Крупнейших аудиторских
+          групп по выручке от юридического консалтинга, по итогам деятельности
+          за 2021 год
+        </h1>
+        <Link href='/about' className={styles.newsLink}>
+          Читать новость...
+        </Link>
       </div>
     </Slider>
   )

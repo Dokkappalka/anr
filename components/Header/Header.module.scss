@@ -3,7 +3,7 @@
 }
 
 .headerPage {
-    @apply bg-slate-100 px-[75px] h-[450px] bg-gradient-to-b from-slate-100 to-sky-200 pt-[125px];
+    @apply bg-slate-100 px-[75px] h-[450px] bg-gradient-to-b from-slate-100 to-sky-200;
     @media (max-width: 750px) {
         @apply px-[25px]
     }
@@ -25,6 +25,10 @@
 }
 
 .buttons {
+    @apply pt-1;
+    button {
+        @apply h-3 w-6
+    }
     button:nth-child(1){
         @apply mr-2
     };

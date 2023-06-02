@@ -3,8 +3,11 @@ import TestSlider from '../TestSlider/TestSlider'
 import styles from './Header.module.scss'
 import menu from '../../assets/menu.svg'
 import Image from 'next/image'
+import flagRU from '../../assets/russia.png'
+import flagUK from '../../assets/united-kingdom.png'
+
 const navItems = [
-  { label: 'Услуги', href: '/qwe' },
+  { label: 'Услуги', href: '/services/audit' },
   { label: 'Сотрудники', href: '/sotrudniki' },
   { label: 'О компании', href: '/about' },
   { label: 'Клиенты', href: '/clients' },
@@ -24,8 +27,12 @@ const Header = () => {
           <Navigation navLinks={navItems} />
         </p>
         <p className={styles.buttons}>
-          <button>EN</button>
-          <button>RU</button>
+          <button>
+            <Image alt='RUS flag' src={flagRU} />
+          </button>
+          <button>
+            <Image alt='UK flag' src={flagUK} />
+          </button>
         </p>
         <button className={styles.menuButton}>
           <Image alt='Menu button' src={menu} />
