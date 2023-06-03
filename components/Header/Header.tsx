@@ -5,6 +5,7 @@ import menu from '../../assets/menu.svg'
 import Image from 'next/image'
 import flagRU from '../../assets/russia.png'
 import flagUK from '../../assets/united-kingdom.png'
+import MenuButton from '../MenuButton/MenuButton'
 
 const navItems = [
   { label: 'Услуги', href: '/services/audit' },
@@ -34,9 +35,7 @@ const Header = () => {
             <Image alt='UK flag' src={flagUK} />
           </button>
         </p>
-        <button className={styles.menuButton}>
-          <Image alt='Menu button' src={menu} />
-        </button>
+        <MenuButton navItems={navItems} />
       </header>
     </>
   )
