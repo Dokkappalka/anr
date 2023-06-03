@@ -4,6 +4,8 @@ import styles from './MenuButton.module.scss'
 import menu from '../../assets/menu.svg'
 import Image from 'next/image'
 import { Navigation } from '../Navigation/Navigation'
+import flagRU from '../../assets/russia.png'
+import flagUK from '../../assets/united-kingdom.png'
 
 interface INavItems {
   href: string
@@ -36,7 +38,21 @@ const MenuButton = ({ navItems }: Props) => {
         <Image alt='Menu button' src={menu} />
       </button>
       <div className={hidden ? styles.hide : styles.navList}>
-        {hidden ? '' : <Navigation navLinks={navItems} />}
+        {hidden ? (
+          ''
+        ) : (
+          <>
+            <Navigation navLinks={navItems} />
+            <p className={styles.buttons}>
+              <button>
+                <Image alt='RUS flag' src={flagRU} />
+              </button>
+              <button>
+                <Image alt='UK flag' src={flagUK} />
+              </button>
+            </p>
+          </>
+        )}
       </div>
     </>
   )

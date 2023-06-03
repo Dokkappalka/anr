@@ -5,18 +5,26 @@
 }
 
 .navList {
-    @apply absolute top-[50px] flex items-start justify-center flex-col w-screen right-[0px] duration-300;
+    @apply absolute top-[50px] flex items-start justify-center flex-col right-[0px] left-[0px] duration-300;
     a {
         @apply py-2 pl-[25px] bg-gradient-to-r from-slate-300 to-sky-50 w-full duration-300 border-b border-slate-400 z-[1000]
     }
     @media (min-width: 750px) {
         @apply hidden
     }
-    a:last-child {
-        @apply rounded-b-md
-    }    
 }
 
 .hide {
     @apply invisible absolute opacity-0 duration-300
+}
+
+.buttons {
+    @apply flex justify-center items-center h-[40px] bg-gradient-to-r from-slate-300 to-sky-50 w-full duration-300 border-b border-slate-400 z-[1000] rounded-b-md;
+    button {
+        @apply w-8
+    }
+    button:nth-child(1){
+        @apply mr-5
+    };
+
 }
