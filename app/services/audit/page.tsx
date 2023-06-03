@@ -25,7 +25,7 @@ const auditPage = async () => {
         phone={nikitenkov[0].phone}
         image={nikitenkov[0].image}
       />
-      <div>
+      <div className={styles.pageBlock}>
         <p className={styles.paragraph}>
           Одним из основных направлений деятельности группы компаний Ассоциация
           «Налоги России» является оказание аудиторских услуг.

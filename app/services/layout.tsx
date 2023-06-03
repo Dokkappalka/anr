@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 const navButtons = [
   { label: 'Аудит', href: '/services/audit' },
-  { label: 'Консалтинговые услуги', href: '/about/contacts' },
-  { label: 'Арбитраж', href: '/about/licenses' },
-  { label: 'Оценка', href: '/about/licenses' },
-  { label: 'Семинары', href: '/about/licenses' },
+  { label: 'Консалтинговые услуги', href: '/services/consulting' },
+  { label: 'Арбитраж', href: '/services/arbitration' },
+  { label: 'Оценка', href: '/services/evaluation' },
+  { label: 'Семинары', href: '/services/seminars' },
 ]
 
 export default function AboutLayout({
