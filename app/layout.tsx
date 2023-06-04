@@ -16,12 +16,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // const allNews = await getAllNews()
+  const allNews = await getAllNews()
   return (
     <html lang='en'>
       <body className={inter.className + ' bg-sky-50'}>
         <div className='max-w-[1900px] m-auto'>
-          <Header allNews={[]} />
+          <Header allNews={allNews} />
           <main className='mainlayout'>
             <div>{children}</div>
           </main>
