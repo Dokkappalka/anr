@@ -5,7 +5,6 @@ import Image from 'next/image'
 import flagRU from '../../assets/russia.png'
 import flagUK from '../../assets/united-kingdom.png'
 import MenuButton from '../MenuButton/MenuButton'
-import { getAllNews } from '@/services/getAllNews'
 
 const navItems = [
   { label: 'Услуги', href: '/services/audit' },
@@ -14,8 +13,16 @@ const navItems = [
   { label: 'Клиенты', href: '/clients' },
 ]
 
-const Header = async () => {
-  const allNews = await getAllNews()
+interface INew {
+  id: number
+  title: string
+  text: string
+}
+
+interface Props {
+  allNews: INew[]
+}
+const Header = ({ allNews }: Props) => {
   return (
     <>
       <div className={styles.headerPage}>
