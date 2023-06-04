@@ -1,11 +1,11 @@
 import { Navigation } from '../Navigation/Navigation'
 import TestSlider from '../TestSlider/TestSlider'
 import styles from './Header.module.scss'
-import menu from '../../assets/menu.svg'
 import Image from 'next/image'
 import flagRU from '../../assets/russia.png'
 import flagUK from '../../assets/united-kingdom.png'
 import MenuButton from '../MenuButton/MenuButton'
+import { getAllNews } from '@/services/getAllNews'
 
 const navItems = [
   { label: 'Услуги', href: '/services/audit' },
@@ -14,11 +14,12 @@ const navItems = [
   { label: 'Клиенты', href: '/clients' },
 ]
 
-const Header = () => {
+const Header = async () => {
+  const allNews = await getAllNews()
   return (
     <>
       <div className={styles.headerPage}>
-        <TestSlider />
+        <TestSlider news={allNews} />
       </div>
       <header className={styles.header}>
         <a className='font-semibold text-xl' href='/'>

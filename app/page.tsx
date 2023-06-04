@@ -6,6 +6,9 @@ export default function Home() {
       <h2>Добро пожаловать!</h2>
       <div className={styles.pageBlock}>
         <p className={styles.paragraph}>
+          Ассоциация «Налоги России» создана в 1992 году.
+        </p>
+        <p className={styles.paragraph}>
           В группу компаний &quot;Ассоциация &quot;Налоги России&quot; входят
           следующие организации:
         </p>

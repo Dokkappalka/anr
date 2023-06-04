@@ -4,7 +4,18 @@ import styles from './Slider.module.scss'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Link from 'next/link'
-const TestSlider = () => {
+import { useState, useEffect } from 'react'
+
+interface INew {
+  id: number
+  title: string
+  text: string
+}
+
+interface Props {
+  news: INew[]
+}
+const TestSlider = ({ news }: Props) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -27,34 +38,17 @@ const TestSlider = () => {
           <p>Почта: Anr@anr.ru</p>
         </div>
       </div>
-      <div className={styles.slideContainer}>
-        <h1 className={styles.title}>
-          Ассоциация «Налоги России» входит в ТОП 10 Аудиторско-консалтинговых
-          групп Урала и Западной Сибири по результатам деятельности в 2021 году
-        </h1>
-        <Link href='/about' className={styles.newsLink}>
-          Читать новость...
-        </Link>
-      </div>
-      <div className={styles.slideContainer}>
-        <h1 className={styles.title}>
-          Ассоциация «Налоги России» входит в ТОП 45 Крупнейших аудиторских
-          групп по выручке от оценочной деятельности в 2021 году
-        </h1>
-        <Link href='/about' className={styles.newsLink}>
-          Читать новость...
-        </Link>
-      </div>
-      <div className={styles.slideContainer}>
-        <h1 className={styles.title}>
-          Ассоциация «Налоги России» входит в ТОП 15 Крупнейших аудиторских
-          групп по выручке от юридического консалтинга, по итогам деятельности
-          за 2021 год
-        </h1>
-        <Link href='/about' className={styles.newsLink}>
-          Читать новость...
-        </Link>
-      </div>
+
+      {news.map((item) => {
+        return (
+          <div className={styles.slideContainer} key={item.id}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <Link href={`/news/${item.id}`} className={styles.newsLink}>
+              Читать далее...
+            </Link>
+          </div>
+        )
+      })}
     </Slider>
   )
 }
