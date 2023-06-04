@@ -25,8 +25,12 @@ const NewsPage = async ({ params: { id } }: Props) => {
     <div className={styles.pageContainer}>
       <h2>{currentNew[0].title}</h2>
       <div className={styles.pageBlock}>
-        {currentNew[0].text.split('\n').map((item: string) => {
-          return <p className={styles.paragraph}>{item}</p>
+        {currentNew[0].text.split('\n').map((item: string, i: number) => {
+          return (
+            <p className={styles.paragraph} key={i}>
+              {item}
+            </p>
+          )
         })}
       </div>
       <div className={styles.pageBlock}>
