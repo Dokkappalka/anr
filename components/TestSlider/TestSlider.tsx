@@ -43,7 +43,16 @@ const TestSlider = ({ news }: Props) => {
         return (
           <div className={styles.slideContainer} key={item.id}>
             <h1 className={styles.title}>{item.title}</h1>
-            <Link href={`/news/${item.id}`} className={styles.newsLink}>
+            <Link
+              href={`/news/${item.id}`}
+              className={styles.newsLink}
+              onClick={() => {
+                window.scrollTo({
+                  top: 450,
+                  behavior: 'smooth',
+                })
+              }}
+            >
               Читать далее...
             </Link>
           </div>
