@@ -34,7 +34,7 @@ const NewsPage = async ({ params: { id } }: Props) => {
           currentNew[0].hrefs.map((href: IHref) => {
             return (
               <>
-                <Link href={href.link} target='_blank'>
+                <Link href={href.link} target='_blank' key={href.link}>
                   {href.label}
                 </Link>
                 <br />
