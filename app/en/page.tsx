@@ -47,7 +47,7 @@ const enMainPage = () => {
           legal services, including representation of clients in courts.
         </p>
         <p className={styles.paragraph}>
-          Ability of the company's to look ahead allows it to master new
+          Ability of the company&apos;s to look ahead allows it to master new
           technologies successfully. The level of techniques of work suggested
           by us, and also the principles of our work based on observance of full
           confidentiality concerning activity of the client, professionalism and
