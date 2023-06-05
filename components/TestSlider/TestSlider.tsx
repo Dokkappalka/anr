@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import React from 'react'
 
 interface INew {
   id: number
@@ -42,13 +43,24 @@ const TestSlider = ({ news }: Props) => {
       {news.map((item) => {
         return (
           <div className={styles.slideContainer} key={item.id}>
-            <h1 className={styles.title}>{item.title}</h1>
+            <h1 className={styles.title}>
+              {item.title.split(' ').length > 25
+                ? item.title.split(' ').map((item, i) => {
+                    if (i < 25) {
+                      return (
+                        <React.Fragment key={i}>{' ' + item}</React.Fragment>
+                      )
+                    }
+                  })
+                : item.title}
+              {item.title.split(' ').length > 25 ? '...' : ''}
+            </h1>
             <Link
               href={`/news/${item.id}`}
               className={styles.newsLink}
               onClick={() => {
                 window.scrollTo({
-                  top: 450,
+                  top: 300,
                   behavior: 'smooth',
                 })
               }}
