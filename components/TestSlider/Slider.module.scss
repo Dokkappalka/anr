@@ -13,7 +13,7 @@
 }
 
 .slideContainer {
-    @apply flex justify-center items-center px-[50px] py-[125px];
+    @apply flex justify-center items-center px-[50px] py-[50px];
     @media(max-width: 750px) {
         @apply px-1
     };

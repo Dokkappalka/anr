@@ -3,7 +3,7 @@
 }
 
 .headerPage {
-    @apply px-[75px] h-[450px] bg-gradient-to-b from-slate-100 to-sky-200;
+    @apply px-[75px] h-[300px] bg-gradient-to-b from-slate-100 to-sky-200;
     @media (max-width: 750px) {
         @apply px-[25px]
     }
