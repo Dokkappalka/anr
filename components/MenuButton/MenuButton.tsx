@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Navigation } from '../Navigation/Navigation'
 import flagRU from '../../assets/russia.png'
 import flagUK from '../../assets/united-kingdom.png'
+import Link from 'next/link'
 
 interface INavItems {
   href: string
@@ -43,13 +44,13 @@ const MenuButton = ({ navItems }: Props) => {
         ) : (
           <>
             <Navigation navLinks={navItems} />
-            <p className={styles.buttons}>
-              <button>
+            <p className={styles.links}>
+              <Link href='/' className={styles.link}>
                 <Image alt='RUS flag' src={flagRU} />
-              </button>
-              <button>
+              </Link>
+              <Link href='/en' className={styles.link}>
                 <Image alt='UK flag' src={flagUK} />
-              </button>
+              </Link>
             </p>
           </>
         )}

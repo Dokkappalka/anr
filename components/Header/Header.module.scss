@@ -24,12 +24,12 @@
     @apply font-semibold
 }
 
-.buttons {
-    @apply pt-1;
-    button {
-        @apply h-3 w-6
+.links {
+    @apply pb-2;
+    a {
+        @apply h-3 w-6 inline-block
     }
-    button:nth-child(1){
+    a:nth-child(1){
         @apply mr-2
     };
     @media (max-width: 750px) {
