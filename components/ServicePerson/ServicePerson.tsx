@@ -6,16 +6,23 @@ interface Props {
   image: any
   work: string
   phone: string
+  isEn: boolean
 }
-const ServicePerson = ({ name, image, work, phone }: Props) => {
+const ServicePerson = ({ name, image, work, phone, isEn }: Props) => {
   return (
     <div className={styles.personContainer}>
       <Image src={image} alt='nikitenkov image' />
       <div>
-        <p className='font-semibold'>Ответственный за направление:</p>
+        <p className='font-semibold'>
+          {isEn
+            ? 'Responsible for the tendency:'
+            : 'Ответственный за направление:'}
+        </p>
         <p>{name}</p>
         <p>{work}</p>
-        <p>Контактный телефон: {phone}</p>
+        <p>
+          {isEn ? 'Telephone:' : 'Контактный телефон:'} {phone}
+        </p>
       </div>
     </div>
   )

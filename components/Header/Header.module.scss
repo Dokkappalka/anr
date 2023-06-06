@@ -1,9 +1,9 @@
 .header {
-    @apply flex items-center justify-between bg-slate-400 h-[50px] sticky top-[-1px] px-3 shadow-md bg-opacity-90 backdrop-blur-xl
+    @apply flex items-center justify-between bg-[#c5faf7] h-[50px] sticky top-[-1px] px-3 shadow-md bg-opacity-90 backdrop-blur-xl
 }
 
 .headerPage {
-    @apply px-[75px] h-[300px] bg-gradient-to-b from-slate-100 to-sky-200;
+    @apply px-[75px] h-[300px] bg-gradient-to-b from-slate-100 to-[#c5faf7];
     @media (max-width: 750px) {
         @apply px-[25px]
     }

@@ -8,6 +8,7 @@ const SeminarsPage = async () => {
     <div className={styles.pageContainer}>
       <h2>Семинары</h2>
       <ServicePerson
+        isEn={false}
         name={vakulina[0].name}
         work={vakulina[0].work}
         phone={vakulina[0].phone}

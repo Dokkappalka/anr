@@ -8,6 +8,7 @@ const ConsultingPage = async () => {
     <div className={styles.pageContainer}>
       <h2>Консалтинговые услуги</h2>
       <ServicePerson
+        isEn={false}
         name={vakulina[0].name}
         work={vakulina[0].work}
         phone={vakulina[0].phone}

@@ -20,6 +20,7 @@ const auditPage = async () => {
     <div className={styles.pageContainer}>
       <h2>Аудит</h2>
       <ServicePerson
+        isEn={false}
         name={nikitenkov[0].name}
         work={nikitenkov[0].work}
         phone={nikitenkov[0].phone}
