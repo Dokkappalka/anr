@@ -263,34 +263,35 @@ const EnConsultingPage = async () => {
         <h2>Business Consulting</h2>
         <p className={styles.paragraph}>
           With years of experience working with companies of different sectors
-          and size of the business, the Association "Taxes of Russia" provides
-          services for the development and implementation of highly effective
-          management decisions.
+          and size of the business, the Association &quot;Taxes of Russia&quot;
+          provides services for the development and implementation of highly
+          effective management decisions.
         </p>
         <p className={styles.paragraph}>
-          Consulting services provided by the Association "Taxes of Russia",
-          promote the comprehensive development and protection of clients'
-          businesses. Timely treatment to counselling allows the company time to
-          identify potential problems and prevent possible negative effects, a
-          strategy and tactics of the company's development, use
-          commercially-tuned management decision.
+          Consulting services provided by the Association &quot;Taxes of
+          Russia&quot;, promote the comprehensive development and protection of
+          client&apos;s businesses. Timely treatment to counselling allows the
+          company time to identify potential problems and prevent possible
+          negative effects, a strategy and tactics of the company&apos;s
+          development, use commercially-tuned management decision.
         </p>
         <p className={styles.paragraph}>
-          Presence in the State of the Association "Taxes of Russia" highly
-          qualified professionals with economic and legal background allows
-          balancing decisions and significantly reduce the risk of financial
-          loss on the part of third parties, including the tax and other
-          regulatory authorities, competitors, business partners.
+          Presence in the State of the Association &quot;Taxes of Russia&quot;
+          highly qualified professionals with economic and legal background
+          allows balancing decisions and significantly reduce the risk of
+          financial loss on the part of third parties, including the tax and
+          other regulatory authorities, competitors, business partners.
         </p>
         <p className={styles.paragraph}>
-          Association "Taxes of Russia" is accredited and works successfully
-          with such banks as Gazprombank, ROSSIYSKY CAPITAL, VTB24, which allows
-          qualified, subject to the requirements of leading Russian banks to
-          develop business plans.
+          Association &quot;Taxes of Russia&quot; is accredited and works
+          successfully with such banks as Gazprombank, ROSSIYSKY CAPITAL, VTB24,
+          which allows qualified, subject to the requirements of leading Russian
+          banks to develop business plans.
         </p>
         <p className={styles.paragraph}>
-          Comprehensive protection of the client's business is a priority in the
-          provision of consulting services to the Association "Taxes of Russia."
+          Comprehensive protection of the client&apos;s business is a priority
+          in the provision of consulting services to the Association &quot;Taxes
+          of Russia.&quot;
         </p>
         <h3>Analysis of financial and economic activity</h3>
         <p className={styles.paragraph}>
