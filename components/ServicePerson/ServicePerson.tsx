@@ -1,5 +1,6 @@
 import styles from './ServicePerson.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface Props {
   name: string
@@ -23,6 +24,9 @@ const ServicePerson = ({ name, image, work, phone, isEn }: Props) => {
         <p>
           {isEn ? 'Telephone:' : 'Контактный телефон:'} {phone}
         </p>
+        <Link href={isEn ? '/en/form' : '/form'} className={styles.orderLink}>
+          {isEn ? 'Online order' : 'Online-заказ'}
+        </Link>
       </div>
     </div>
   )

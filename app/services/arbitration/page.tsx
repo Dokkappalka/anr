@@ -1,5 +1,5 @@
 import ServicePerson from '@/components/ServicePerson/ServicePerson'
-import styles from './ArbitrationPage.module.scss'
+import styles from '../servicesPage.module.scss'
 import { getCurrentPerson } from '@/services/getCurrentPerson'
 
 const ArbitrationPage = async () => {
@@ -14,7 +14,11 @@ const ArbitrationPage = async () => {
         phone={vakulina[0].phone}
         image={vakulina[0].image}
       />
-      <a href='https://anr.ru/storage/doc/price_cons.PDF' target='_blank'>
+      <a
+        className={styles.link}
+        href='https://anr.ru/storage/doc/price_cons.PDF'
+        target='_blank'
+      >
         Прейскурант
       </a>
       <div className={styles.pageBlock}>

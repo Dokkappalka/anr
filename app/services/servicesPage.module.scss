@@ -16,3 +16,32 @@
         @apply mb-5
     }
 }
+
+.pageContainer {
+    .paragraph {
+        @apply my-4
+    }
+    .link {
+        @apply text-sky-500 underline
+    }
+    h3 {
+    @apply font-medium my-3
+}
+}
+
+.pageBlock {
+    @apply mt-10;
+    .outsideUl {
+        @apply block list-disc;
+        li {
+            @apply list-inside my-3
+        }
+    }
+}
+
+.insideUl {
+    @apply list-decimal block;
+    li {
+        @apply pl-5 mb-1;
+    }
+}

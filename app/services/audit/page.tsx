@@ -1,5 +1,5 @@
 import ServicePerson from '@/components/ServicePerson/ServicePerson'
-import styles from './auditPage.module.scss'
+import styles from '../servicesPage.module.scss'
 import Image from 'next/image'
 import { getCurrentPerson } from '@/services/getCurrentPerson'
 
@@ -63,12 +63,18 @@ const auditPage = async () => {
           большое внимание уделяем вопросам налогообложения, что позволяет
           существенно снизить риски возникновения налоговых претензий у Клиента.
         </p>
-        <a href='https://anr.ru/storage/doc/sout%20ANR.PDF'>
+        <a
+          className={styles.link}
+          href='https://anr.ru/storage/doc/sout%20ANR.PDF'
+        >
           Отчет о проведении специальной оценки условий труда Закрытого
           акционерного общества «Ассоциация «Налоги России»
         </a>
         <br />
-        <a href='https://anr.ru/storage/doc/sout%20Metaudit.PDF'>
+        <a
+          className={styles.link}
+          href='https://anr.ru/storage/doc/sout%20Metaudit.PDF'
+        >
           Отчет о проведении специальной оценки условий труда ООО
           &quot;Метаудит&quot;
         </a>
@@ -202,7 +208,10 @@ const auditPage = async () => {
           отчетности согласно требованиям российского законодательства является
           обязательным для организаций, со ссылкой на соответствующий
           нормативный документ, приведен в следующей{' '}
-          <a href='https://minfin.gov.ru/ru/document/?id_4=126466#_ftn1'>
+          <a
+            className={styles.link}
+            href='https://minfin.gov.ru/ru/document/?id_4=126466#_ftn1'
+          >
             таблице
           </a>
           .

@@ -1,5 +1,5 @@
 import ServicePerson from '@/components/ServicePerson/ServicePerson'
-import styles from './consultingPage.module.scss'
+import styles from '../servicesPage.module.scss'
 import { getCurrentPerson } from '@/services/getCurrentPerson'
 
 const ConsultingPage = async () => {
@@ -14,7 +14,11 @@ const ConsultingPage = async () => {
         phone={vakulina[0].phone}
         image={vakulina[0].image}
       />
-      <a href='https://anr.ru/storage/doc/price_cons.PDF' target='_blank'>
+      <a
+        className={styles.link}
+        href='https://anr.ru/storage/doc/price_cons.PDF'
+        target='_blank'
+      >
         Прейскурант
       </a>
       <div className={styles.pageBlock}>
@@ -444,7 +448,9 @@ const ConsultingPage = async () => {
             </li>
           </ul>
         </p>
-        <a href='/'>Подробно о разработке бизнес-плана</a>
+        <a className={styles.link} href='/'>
+          Подробно о разработке бизнес-плана
+        </a>
       </div>
       <div className={styles.pageBlock}>
         <h2>Управленческий учет</h2>

@@ -1,5 +1,5 @@
 import ServicePerson from '@/components/ServicePerson/ServicePerson'
-import styles from './EvaluationPage.module.scss'
+import styles from '../servicesPage.module.scss'
 import { getCurrentPerson } from '@/services/getCurrentPerson'
 
 const EvaluationPage = async () => {
