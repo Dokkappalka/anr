@@ -3,10 +3,6 @@ import styles from './servicesPage.module.scss'
 import { Metadata } from 'next'
 import { Navigation } from '@/components/Navigation/Navigation'
 
-export const metadata: Metadata = {
-  title: 'Услуги',
-}
-
 const navButtons = [
   { label: 'Аудит', href: '/services/audit' },
   { label: 'Консалтинговые услуги', href: '/services/consulting' },

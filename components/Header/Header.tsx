@@ -41,7 +41,7 @@ const Header = ({ allNews }: Props) => {
   return (
     <>
       <div className={styles.headerPage}>
-        <TestSlider news={isEn ? [] : allNews} />
+        <TestSlider news={isEn ? [] : allNews} isEn={isEn} />
       </div>
       <header className={styles.header}>
         <a

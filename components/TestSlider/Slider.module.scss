@@ -1,5 +1,5 @@
 .title {
-    @apply text-2xl font-semibold text-gray-600 flex items-center flex-col mb-5;
+    @apply text-2xl font-semibold text-gray-800 flex items-center flex-col mb-5;
     @media (max-width: 750px) {
         @apply text-base text-center
     }
@@ -24,11 +24,4 @@
 
 .newsLink {
     @apply text-sky-500 underline
-}
-
-.main {
-    background-image: url(../../assets/cpLogo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }

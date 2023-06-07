@@ -15,8 +15,9 @@ interface INew {
 
 interface Props {
   news: INew[]
+  isEn: boolean
 }
-const TestSlider = ({ news }: Props) => {
+const TestSlider = ({ news, isEn }: Props) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -29,14 +30,22 @@ const TestSlider = ({ news }: Props) => {
   }
   return (
     <Slider {...settings}>
-      <div className={styles.slideContainer + ' ' + styles.main}>
+      <div className={styles.slideContainer}>
         <h1 className={styles.title}>
-          <p>Ассоциация &quot;Налоги России&quot;</p>
-          <p className='text-xl text-red-500'>Защита бизнеса с 1992 года</p>
+          <p>
+            {isEn
+              ? 'Association "Taxes of Russia"'
+              : 'Ассоциация "Налоги России"'}
+          </p>
+          <p className='text-xl text-red-500'>
+            {isEn ? 'Created in 1992' : 'Защита бизнеса с 1992 года'}
+          </p>
         </h1>
         <div className={styles.pageContent}>
-          <p>Телефон: (343) 378-93-33, 378-95-00, 378-93-30</p>
-          <p>Почта: Anr@anr.ru</p>
+          <p>
+            {isEn ? 'Phone' : 'Телефон'}: (343) 378-93-33, 378-95-00, 378-93-30
+          </p>
+          <p>{isEn ? 'E-mail' : 'Почта'}: Anr@anr.ru</p>
         </div>
       </div>
 
