@@ -25,3 +25,10 @@
 .newsLink {
     @apply text-sky-500 underline
 }
+
+.main {
+    background-image: url(../../assets/cpLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

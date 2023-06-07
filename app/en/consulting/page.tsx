@@ -238,6 +238,279 @@ const EnConsultingPage = async () => {
           conclude contracts with counterparties.
         </p>
       </div>
+      <div className={styles.pageBlock}>
+        <h2>Transfer pricing analysis</h2>
+        <p className={styles.paragraph}>
+          Analysis of transfer pricing and the pricing policy of the company
+          includes:
+          <ul className={styles.outsideUl}>
+            <li>
+              risk analysis of the tax authorities Article V1 of the Tax Code
+              when checking the prices applied by enterprises,
+            </li>
+            <li>
+              Conduct market research to determine market prices for specific
+              goods, labor, services,
+            </li>
+            <li>
+              Preparation of documents justifying the market value of the goods
+              (works, services).
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div className={styles.pageBlock}>
+        <h2>Business Consulting</h2>
+        <p className={styles.paragraph}>
+          With years of experience working with companies of different sectors
+          and size of the business, the Association "Taxes of Russia" provides
+          services for the development and implementation of highly effective
+          management decisions.
+        </p>
+        <p className={styles.paragraph}>
+          Consulting services provided by the Association "Taxes of Russia",
+          promote the comprehensive development and protection of clients'
+          businesses. Timely treatment to counselling allows the company time to
+          identify potential problems and prevent possible negative effects, a
+          strategy and tactics of the company's development, use
+          commercially-tuned management decision.
+        </p>
+        <p className={styles.paragraph}>
+          Presence in the State of the Association "Taxes of Russia" highly
+          qualified professionals with economic and legal background allows
+          balancing decisions and significantly reduce the risk of financial
+          loss on the part of third parties, including the tax and other
+          regulatory authorities, competitors, business partners.
+        </p>
+        <p className={styles.paragraph}>
+          Association "Taxes of Russia" is accredited and works successfully
+          with such banks as Gazprombank, ROSSIYSKY CAPITAL, VTB24, which allows
+          qualified, subject to the requirements of leading Russian banks to
+          develop business plans.
+        </p>
+        <p className={styles.paragraph}>
+          Comprehensive protection of the client's business is a priority in the
+          provision of consulting services to the Association "Taxes of Russia."
+        </p>
+        <h3>Analysis of financial and economic activity</h3>
+        <p className={styles.paragraph}>
+          Analysis of financial and economic activity (FEA) is performed to
+          explore company development tendency to search, change and ground
+          internal reserve of enterprise directed to increase its efficiency.
+        </p>
+        <p className={styles.paragraph}>
+          Analysis of FEA includes:
+          <ul className={styles.outsideUl}>
+            <li>
+              Analysis of budgeting system arrangement and management accounting
+              in the enterprise
+            </li>
+            <li>
+              Analysis of pricing methods, expenses management, budget formation
+              in the enterprise
+            </li>
+            <li>Analysis and rationing of current capital.</li>
+            <li>Analysis and optimization of pay-roll fund.</li>
+            <li>
+              The factor economic analysis of influence on efficiency of profit,
+              sales volume, expenses, nomenclature of turn out product
+            </li>
+            <li>
+              Factor economic analysis of recourse exploitation intensification
+            </li>
+            <li>
+              Economic analysis of sales volume, expenses, profits,
+              profitability, financial condition, liquidity and solvency.
+            </li>
+            <li>Monitoring of financial condition, solvency</li>
+            <li>
+              Forward-looking analysis of financial inability (risk of
+              bankruptcy).
+            </li>
+            <li>
+              Economic analysis of investment policy. Analysis of investment
+              risk.
+            </li>
+          </ul>
+        </p>
+        <h3>Cost analysis</h3>
+        <p className={styles.paragraph}>
+          Development of a program to reduce costs provide for the establishment
+          of the organizational structure, processes and cost management tools,
+          providing complete management of costs of the enterprise.
+        </p>
+        <p className={styles.paragraph}>
+          Development of a program for strategic cost reductions include:
+          <ul className={styles.outsideUl}>
+            <li>Assess the quality of the current cost management company;</li>
+            <li>
+              Analysis and evaluation of critical success factors to reduce
+              costs;
+            </li>
+            <li>
+              the definition of financial and non-financial criteria for
+              evaluating critical success factors;
+            </li>
+            <li>
+              identification of the most significant factors affecting the cost
+              of doing business;
+            </li>
+            <li>Development of complex business models;</li>
+            <li>
+              Development of effective methods of cost management company;
+            </li>
+            <li>
+              Formation of the organizational elements of the cost management;
+            </li>
+          </ul>
+        </p>
+        <h3>Business plan development</h3>
+        <p className={styles.paragraph}>
+          Performance of works on business-planning and investment designing
+          includes:
+        </p>
+        <p className={styles.paragraph}>1. Marketing research:</p>
+        <p className={styles.paragraph}>
+          Within business-plans development the following researches are carried
+          out:
+          <ul className={styles.outsideUl}>
+            <li>
+              Examination of development condition and tendencies of branch as
+              an object of investment;
+            </li>
+            <li>
+              Estimation of volume and structure of current demand/supply;
+            </li>
+            <li>Perspective estimation of supply and demand in the market;</li>
+            <li>
+              Examination of dynamics and modelling of capacity and development
+              of market in mid-term;
+            </li>
+            <li>
+              Analysis of markets and revealing of the most perspective for
+              investment commodity groups;
+            </li>
+            <li>
+              Estimation of competitive environment (circle of basic
+              competitors, strategic plans of competitors’ development, activity
+              tactics and strategy);
+            </li>
+            <li>
+              Drawing up of forecasts for sales volume of production and
+              services, proceeding from dynamics of market development and
+              competition conditions.
+            </li>
+          </ul>
+        </p>
+        <p className={styles.paragraph}>
+          2. Business-planning and investment designing.
+        </p>
+        <p className={styles.paragraph}>
+          On basis of market researches by means of Program products the
+          enterprise financial model is developed which includes:
+          <ul className={styles.outsideUl}>
+            <li>Investment plan,</li>
+            <li>Operational plan,</li>
+            <li>Financial plan,</li>
+            <li>Cash-flow,</li>
+            <li>Balance,</li>
+            <li>Report on profits and losses,</li>
+            <li>Integrated indexation of investments efficiency,</li>
+            <li>Analysis of sensitivity,</li>
+            <li>Breakeven Analysis,</li>
+            <li>
+              Statistical analysis of the project by means of Monte-Carlo method
+            </li>
+          </ul>
+        </p>
+        <p className={styles.paragraph}>
+          3. Consulting services in risk-management:
+        </p>
+        <p className={styles.paragraph}>
+          In case financial plan provides for use of borrowed assets and
+          business-plan is intended for decision-making by external investor on
+          project financing, business-plan includes:
+          <ul className={styles.outsideUl}>
+            <li>
+              card of enterprise risks (identification, systematized description
+              and risks rating);
+            </li>
+            <li>identification, systematized description and risks rating;</li>
+            <li>
+              numerical estimation of overall risk and definition of capital
+              amount for risks covering;
+            </li>
+            <li>
+              stress-testing (checking of company stability to stressful changes
+              of risk factors and other crisis situations);
+            </li>
+            <li>
+              development of action system and rules to control and decrease
+              risks.
+            </li>
+          </ul>
+        </p>
+        <p className={styles.paragraph}>
+          Researches may be performed stage by stage and in optimum reference
+          for the customer according to current situation at the enterprise and
+          its objectives.
+        </p>
+        <h3>Managerial Accounting</h3>
+        <p className={styles.paragraph}>
+          Development of management accounting and controlling Management
+          accounting system is being developed as the most effective tool to get
+          a full and accurate information about the company in real time.
+        </p>
+        <p className={styles.paragraph}>
+          An initial concept of the administrative account, which determines: •
+          centers of financial accounting, their subordination in the management
+          accounts;
+          <ul className={styles.outsideUl}>
+            <li>
+              the structure of the users of information (level, the volume of
+              the data, frequency);
+            </li>
+            <li>
+              a common data structure, expected to gather in the developed
+              system of management accounting;
+            </li>
+            <li>
+              requirements for a set of key indicators, intended for the
+              evaluation of the company.
+            </li>
+          </ul>
+        </p>
+        <p className={styles.paragraph}>
+          In the second stage, a Decree on management accounting, which will
+          determine:
+          <ul className={styles.outsideUl}>
+            <li>
+              Key indicators to measure and monitor the financial activities of
+              each center of financial accounting;
+            </li>
+            <li>
+              forms and terms of management reporting to meet the requirements
+              of different users (management, shareholders, etc.);
+            </li>
+            <li>
+              schema document in the company to ensure effective management
+              accounting mechanism consolidation of management reporting;
+            </li>
+            <li>
+              principles and rules for the distribution of income and expenses
+              between the various business units of the company;
+            </li>
+            <li>
+              layout and procedure of budgets for the next period, and a list of
+              persons responsible for the adoption and approval of budgets;
+            </li>
+            <li>
+              a methodology for analysing the financial and economic activities
+              and identify those responsible.
+            </li>
+          </ul>
+        </p>
+      </div>
     </div>
   )
 }

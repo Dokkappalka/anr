@@ -45,9 +45,9 @@ export const allPersons = [
   },
   {
     name: 'Бахтин Владислав Борисович',
-    enName: '1',
+    enName: 'Bakhtin Vladislav Borisovich',
     work: 'Руководитель департамента оценки и управленческого консультирования',
-    enWork: '1',
+    enWork: 'the Head of evaluation department',
     isCertified: false,
     description:
       'Направления: оценка. В 1997 г. закончил УрГЭУ, экономический факультет. Закончил Институт профессиональной оценки по программе "Оценка стоимости предприятия (бизнеса)" в 2000 г.',

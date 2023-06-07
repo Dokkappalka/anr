@@ -1,9 +1,12 @@
 .header {
-    @apply flex items-center justify-between bg-[#c5faf7] h-[50px] sticky top-[-1px] px-3 shadow-md bg-opacity-90 backdrop-blur-xl
+    @apply flex items-center bg-[#c5f5fa] justify-between  h-[50px] sticky top-[-1px] px-[70px] shadow-md bg-opacity-90 backdrop-blur-xl;
+    @media(max-width: 750px) {
+        @apply px-4
+    }
 }
 
-.headerPage {
-    @apply px-[75px] h-[300px] bg-gradient-to-b from-slate-100 to-[#c5faf7];
+.headerPage {  
+    @apply px-[75px] h-[300px] bg-gradient-to-b from-slate-100 to-[#c5f5fa];
     @media (max-width: 750px) {
         @apply px-[25px]
     }
@@ -22,6 +25,7 @@
 
 .pageContent {
     @apply font-semibold
+    
 }
 
 .links {

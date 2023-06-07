@@ -9,6 +9,7 @@ import flagUK from '../../assets/united-kingdom.png'
 import MenuButton from '../MenuButton/MenuButton'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import logoImg from '../../assets/cpLogo.svg'
 
 const navItems = [
   { label: 'Услуги', href: '/services/audit' },
@@ -43,8 +44,11 @@ const Header = ({ allNews }: Props) => {
         <TestSlider news={isEn ? [] : allNews} />
       </div>
       <header className={styles.header}>
-        <a className='font-semibold text-xl' href={isEn ? '/en' : '/'}>
-          ANR.RU
+        <a
+          className='font-semibold text-xl flex justify-center items-center'
+          href={isEn ? '/en' : '/'}
+        >
+          <Image src={logoImg} alt='Logo' className='w-[70px]' />
         </a>
         <p className={styles.navList}>
           <Navigation navLinks={isEn ? enNavItems : navItems} />

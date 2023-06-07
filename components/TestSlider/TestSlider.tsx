@@ -29,7 +29,7 @@ const TestSlider = ({ news }: Props) => {
   }
   return (
     <Slider {...settings}>
-      <div className={styles.slideContainer}>
+      <div className={styles.slideContainer + ' ' + styles.main}>
         <h1 className={styles.title}>
           <p>Ассоциация &quot;Налоги России&quot;</p>
           <p className='text-xl text-red-500'>Защита бизнеса с 1992 года</p>
