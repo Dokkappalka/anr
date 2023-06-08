@@ -15,7 +15,7 @@
 }
 
 .orderLink {
-    @apply flex justify-center items-center bg-teal-200 border rounded-sm py-1 px-2 hover:bg-teal-400 duration-200 border-black text-slate-800 max-w-[150px] mt-5;
+    @apply flex justify-center items-center bg-blue-200 border rounded-sm py-1 px-2 hover:bg-blue-300 duration-200 border-black text-slate-800 max-w-[150px] mt-5;
     @media (max-width: 1030px) {
         @apply flex justify-center items-center max-w-[300px] mx-auto
     }
