@@ -3,7 +3,7 @@ import styles from './MainPage.module.scss'
 export default function Home() {
   return (
     <div className={styles.pageContainer}>
-      <h2>Добро пожаловать!</h2>
+      <h2>О группе компаний</h2>
       <div className={styles.pageBlock}>
         <p className={styles.paragraph}>
           Ассоциация «Налоги России» создана в 1992 году.
