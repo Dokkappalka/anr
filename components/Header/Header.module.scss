@@ -1,16 +1,19 @@
+
+// h-[50px] + вернуть media 750
 .header {
-    @apply flex items-center bg-[#c5f5fa] justify-between  h-[50px] sticky top-[-1px] px-[70px] shadow-md bg-opacity-90 backdrop-blur-xl;
-    @media(max-width: 750px) {
+    @apply flex items-center bg-[#c5f5fa] justify-between  h-[65px] sticky top-[-1px] px-[70px] bg-opacity-90 backdrop-blur-xl z-[1000] shadow-md;
+    @media(max-width: 850px) {
         @apply px-4
     }
 }
 
 .headerPage {  
-    background-image: url(../../assets/cpLogo.svg), linear-gradient(0deg, #c5f5fa, #f1f5f9),;
+    // url(../../assets/cpLogo.svg) + убрать shadow-md
+    background-image: linear-gradient(0deg, #c5f5fa, #f1f5f9),;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    @apply px-[75px] h-[300px];
+    @apply px-[75px] h-[300px] shadow-md;
     @media (max-width: 750px) {
         @apply px-[25px]
     }

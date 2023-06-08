@@ -40,15 +40,16 @@ const Header = ({ allNews }: Props) => {
   const isEn = pathname.includes('en')
   return (
     <>
-      <div className={styles.headerPage}>
+      {/* <div className={styles.headerPage}>
         <TestSlider news={isEn ? [] : allNews} isEn={isEn} />
-      </div>
+      </div> */}
       <header className={styles.header}>
         <a
           className='font-semibold text-xl flex justify-center items-center'
           href={isEn ? '/en' : '/'}
         >
-          <Image src={logoImg} alt='Logo' className='w-[70px]' />
+          <Image src={logoImg} alt='Logo' className='w-[125px]' />
+          {/* w-[70px] */}
         </a>
         <p className={styles.navList}>
           <Navigation navLinks={isEn ? enNavItems : navItems} />
@@ -63,6 +64,9 @@ const Header = ({ allNews }: Props) => {
         </p>
         <MenuButton navItems={isEn ? enNavItems : navItems} />
       </header>
+      <div className={styles.headerPage}>
+        <TestSlider news={isEn ? [] : allNews} isEn={isEn} />
+      </div>
     </>
   )
 }
