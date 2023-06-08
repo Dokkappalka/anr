@@ -1,5 +1,5 @@
 .link {
-    @apply px-4 hover:text-sky-600 duration-200;
+    @apply px-4 hover:text-sky-600 duration-200 font-semibold;
     &Active {
         @apply px-4 text-sky-800
     }
