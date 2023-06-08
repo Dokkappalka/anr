@@ -4,7 +4,7 @@ import Image from 'next/image'
 const enMainPage = () => {
   return (
     <div className={styles.pageContainer}>
-      <h2>Welcome!</h2>
+      <h2>About the group of companies</h2>
       <div className={styles.pageBlock}>
         <p className={styles.paragraph}>
           Association &quot;Taxes of Russia&quot; is created in 1992.
