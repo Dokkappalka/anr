@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 const navButtons = [
   { label: 'О компании', href: '/about' },
   { label: 'Контакты', href: '/about/contacts' },
-  { label: 'Лицензии и свидетельства', href: '/about/licenses' },
+  { label: 'Рейтинги и аккредитации', href: '/about/ratings' },
+  { label: 'Раскрытие информации ООО Метаудит', href: '/about/info' },
 ]
 
 export default function AboutLayout({
@@ -21,7 +22,7 @@ export default function AboutLayout({
   return (
     <div className={styles.layoutContainer}>
       <div className={styles.navContainer}>
-        <Navigation navLinks={navButtons} />
+        <Navigation navLinks={navButtons} isDark={true} />
       </div>
       {children}
     </div>

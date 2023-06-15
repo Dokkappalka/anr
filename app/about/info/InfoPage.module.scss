@@ -1,0 +1,11 @@
+.pageContainer {
+    @apply w-full 
+}
+
+.links {
+    @apply flex items-start flex-col;
+}
+
+.link {
+    @apply underline mt-2 text-sky-600 hover:text-sky-700 duration-200;
+}

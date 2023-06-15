@@ -43,7 +43,7 @@ const MenuButton = ({ navItems }: Props) => {
           ''
         ) : (
           <>
-            <Navigation navLinks={navItems} />
+            <Navigation navLinks={navItems} isDark={false} />
             <p className={styles.links}>
               <Link href='/' className={styles.link}>
                 <Image alt='RUS flag' src={flagRU} />

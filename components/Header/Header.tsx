@@ -52,7 +52,7 @@ const Header = ({ allNews }: Props) => {
           {/* w-[70px] */}
         </a>
         <p className={styles.navList}>
-          <Navigation navLinks={isEn ? enNavItems : navItems} />
+          <Navigation navLinks={isEn ? enNavItems : navItems} isDark={false} />
         </p>
         <p className={styles.links}>
           <Link href='/'>

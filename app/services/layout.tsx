@@ -19,7 +19,7 @@ export default function AboutLayout({
   return (
     <div className={styles.layoutContainer}>
       <div className={styles.navContainer}>
-        <Navigation navLinks={navButtons} />
+        <Navigation navLinks={navButtons} isDark={true} />
       </div>
       {children}
     </div>

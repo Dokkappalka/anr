@@ -71,22 +71,6 @@ const AboutPage = () => {
         </a>
         ).
       </p>
-      <div className={styles.links}>
-        <a
-          href='https://anr.ru/storage/doc/sout%20ANR.PDF'
-          className={styles.link}
-        >
-          Отчет о проведении специальной оценки условий труда Закрытого
-          акционерного общества «Ассоциация «Налоги России»
-        </a>
-        <a
-          href='https://anr.ru/storage/doc/sout%20Metaudit.PDF'
-          className={styles.link}
-        >
-          Отчет о проведении специальной оценки условий труда ООО
-          &quot;Метаудит&quot;
-        </a>
-      </div>
     </div>
   )
 }

@@ -11,10 +11,17 @@ interface NavLink {
 
 interface Props {
   navLinks: NavLink[]
+  isDark: boolean
 }
 
-const Navigation = ({ navLinks }: Props) => {
+const Navigation = ({ navLinks, isDark }: Props) => {
   const pathname = usePathname()
+  const colors = {
+    link: isDark
+      ? 'text-black hover:text-sky-600'
+      : 'text-slate-100 hover:text-slate-400',
+    linkActive: isDark ? 'text-sky-800' : 'text-blue-400',
+  }
   return (
     <>
       {navLinks.map((link) => {
@@ -23,7 +30,11 @@ const Navigation = ({ navLinks }: Props) => {
           <Link
             key={link.label}
             href={link.href}
-            className={isActive ? styles.linkActive : styles.link}
+            className={
+              isActive
+                ? styles.linkActive + ' ' + colors.linkActive
+                : styles.link + ' ' + colors.link
+            }
           >
             {link.label}
           </Link>

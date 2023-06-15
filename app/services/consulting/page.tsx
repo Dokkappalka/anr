@@ -14,11 +14,7 @@ const ConsultingPage = async () => {
         phone={vakulina[0].phone}
         image={vakulina[0].image}
       />
-      <a
-        className={styles.link}
-        href='https://anr.ru/storage/doc/price_cons.PDF'
-        target='_blank'
-      >
+      <a className={styles.link} href='/price_cons.PDF' target='_blank'>
         Прейскурант
       </a>
       <div className={styles.pageBlock}>
