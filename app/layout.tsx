@@ -21,7 +21,7 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className + ' bg-sky-50'}>
-        <div className='max-w-[1900px] m-auto'>
+        <div className='max-w-[2000px] m-auto'>
           <Header allNews={allNews} />
           <main className='mainlayout'>
             <div>{children}</div>
