@@ -32,12 +32,12 @@ const TestSlider = ({ news, isEn }: Props) => {
     <Slider {...settings}>
       <div className={styles.slideContainer}>
         <h1 className={styles.title}>
-          <p>
+          <p className={styles.mainTitle}>
             {isEn
               ? 'Association "Taxes of Russia"'
               : 'Ассоциация "Налоги России"'}
           </p>
-          <p className='text-xl text-red-500'>
+          <p className={styles.secondTitle}>
             {isEn ? 'Created in 1992' : 'Защита бизнеса с 1992 года'}
           </p>
         </h1>

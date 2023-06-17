@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const navButtons = [
   { label: 'О компании', href: '/about' },
-  { label: 'Контакты', href: '/about/contacts' },
+  { label: 'Сотрудники', href: '/about/sotrudniki' },
   { label: 'Рейтинги и аккредитации', href: '/about/ratings' },
   { label: 'Раскрытие информации ООО Метаудит', href: '/about/info' },
 ]

@@ -9,7 +9,7 @@
 }
 
 .container {
-    @apply w-[500px] border p-5 bg-sky-100 rounded-sm min-h-[450px] mx-1 mb-2 min-w-[325px] shadow-md
+    @apply max-w-[500px] border p-5 bg-sky-100 rounded-sm min-h-[450px] mx-1 mb-2 min-w-[325px] shadow-md
 }
 
 .image {

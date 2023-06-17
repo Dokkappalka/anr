@@ -3,7 +3,19 @@
     @media (max-width: 750px) {
         @apply text-base text-center
     }
-}
+    .mainTitle {
+        @apply text-3xl;
+        @media (max-width: 350px) {
+            @apply text-lg
+        }
+    }
+    .secondTitle  {
+        @apply text-xl text-red-500;
+        @media(max-width: 500px){
+            @apply text-base
+        }
+    }
+    }
 
 .pageContent {
     @apply font-semibold;
@@ -14,6 +26,9 @@
 
 .slideContainer {
     @apply flex justify-center items-center px-[50px] py-[50px];
+    @media(max-width: 1080px) {
+        @apply pt-5 pb-[30px]
+    };
     @media(max-width: 750px) {
         @apply px-1
     };
@@ -25,3 +40,4 @@
 .newsLink {
     @apply text-sky-500 underline
 }
+

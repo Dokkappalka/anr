@@ -13,7 +13,7 @@ import logoImg from '../../assets/cpLogo.svg'
 
 const navItems = [
   { label: 'Услуги', href: '/services/audit' },
-  { label: 'Сотрудники', href: '/sotrudniki' },
+  { label: 'Контакты', href: '/contacts' },
   { label: 'О компании', href: '/about' },
   { label: 'Клиенты', href: '/clients' },
 ]
