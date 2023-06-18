@@ -38,12 +38,15 @@ const TestSlider = ({ news, isEn }: Props) => {
               : 'Ассоциация "Налоги России"'}
           </p>
           <p className={styles.secondTitle}>
-            {isEn ? 'Created in 1992' : 'Защита бизнеса с 1992 года'}
+            {isEn
+              ? 'Business protection since 1992'
+              : 'Защита бизнеса с 1992 года'}
           </p>
         </h1>
         <div className={styles.pageContent}>
           <p>
-            {isEn ? 'Phone' : 'Телефон'}: (343) 378-93-33, 378-95-00, 378-93-30
+            {isEn ? 'Phone' : 'Телефон'}: 7 (343) 378-93-33, 378-95-00,
+            378-93-30
           </p>
           <p>{isEn ? 'E-mail' : 'Почта'}: Anr@anr.ru</p>
         </div>

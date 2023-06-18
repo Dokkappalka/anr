@@ -20,10 +20,10 @@ const navItems = [
 
 const enNavItems = [
   { label: 'Audit', href: '/en/audit' },
-  { label: 'Consulting services', href: '/en/consulting' },
+  { label: 'Consulting', href: '/en/consulting' },
   { label: 'Arbitration', href: '/en/arbitration' },
   { label: 'Valuation', href: '/en/evaluation' },
-  { label: 'Seminars', href: '/en/seminars' },
+  { label: 'Contacts', href: '/en/contacts' },
 ]
 
 interface INew {
