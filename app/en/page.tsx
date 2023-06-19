@@ -42,7 +42,7 @@ const enMainPage = () => {
         </p>
         <p className={styles.paragraph}>
           The level of work methods we offer, as well as the principles of our
-          work, based on complete confidentiality regarding the client's
+          work, based on complete confidentiality regarding the client&apos;s
           activities, professionalism and responsibility for the results of our
           work, competence and valuable practical experience, determine the
           choice and trust of many who turn to us for help and advice.
