@@ -17,6 +17,9 @@
         li {
             @apply list-inside my-3
         }
+        .ulParagraph {
+            @apply pl-[21px] mt-2 mb-5
+        }
     }
 }
 

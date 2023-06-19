@@ -444,9 +444,6 @@ const ConsultingPage = async () => {
             </li>
           </ul>
         </p>
-        <a className={styles.link} href='/'>
-          Подробно о разработке бизнес-плана
-        </a>
       </div>
       <div className={styles.pageBlock}>
         <h2>Управленческий учет</h2>
